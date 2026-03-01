@@ -21,15 +21,20 @@
         <Loader2 class="w-3.5 h-3.5 animate-spin text-gray-400" />
         <span class="text-xs text-gray-400">Updating...</span>
       </div>
-      <select
-        v-else
-        :value="request.status"
-        @change="$emit('status-change', request, ($event.target as HTMLSelectElement).value)"
-        class="cursor-pointer text-xs font-semibold rounded-full px-3 py-1.5 border-0 focus:outline-none focus:ring-2 focus:ring-indigo-400"
-        :class="statusColor(request.status)"
-      >
-        <option v-for="s in STATUS_OPTIONS" :key="s" :value="s">{{ s }}</option>
-      </select>
+      <div v-else class="relative inline-flex items-center">
+        <select
+          :value="request.status"
+          @change="$emit('status-change', request, ($event.target as HTMLSelectElement).value)"
+          class="cursor-pointer appearance-none text-xs font-semibold rounded-full pl-3 pr-6 py-1.5 border-0 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+          :class="statusColor(request.status)"
+        >
+          <option v-for="s in STATUS_OPTIONS" :key="s" :value="s">{{ s }}</option>
+        </select>
+        <ChevronDown
+          class="pointer-events-none absolute right-2 w-3 h-3"
+          :class="statusColor(request.status)"
+        />
+      </div>
     </td>
     <td class="px-4 py-3 text-xs text-gray-400">{{ formatDate(request.created_at) }}</td>
     <td class="px-4 py-3 text-gray-400">
