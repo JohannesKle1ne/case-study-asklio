@@ -1,0 +1,122 @@
+[
+  [
+    {
+      "id": 1,
+      "total_price": 50,
+      "total_lines": 3,
+      "order_lines": [
+        {
+          "description": "Common Widget A",
+          "price": 10
+        },
+        {
+          "description": "Specialized Tool X",
+          "price": 10
+        },
+        {
+          "description": "Common Widget B",
+          "price": 30
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "total_price": 80,
+      "total_lines": 3,
+      "order_lines": [
+        {
+          "description": "Common Widget C",
+          "price": 20
+        },
+        {
+          "description": "Common Widget D",
+          "price": 20
+        },
+        {
+          "description": "Specialized Tool Y",
+          "price": 40
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "id": 1,
+      "total_price": 50,
+      "total_lines": 3,
+      "order_lines": [
+        {
+          "description": "Common Widget A",
+          "price": 10
+        },
+        {
+          "description": "Common Widget C",
+          "price": 20
+        },
+        {
+          "description": "Common Widget D",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "total_price": 80,
+      "total_lines": 3,
+      "order_lines": [
+        {
+          "description": "Specialized Tool X",
+          "price": 10
+        },
+        {
+          "description": "Common Widget B",
+          "price": 30
+        },
+        {
+          "description": "Specialized Tool Y",
+          "price": 40
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "id": 1,
+      "total_price": 50,
+      "total_lines": 3,
+      "order_lines": [
+        {
+          "description": "Specialized Tool X",
+          "price": 10
+        },
+        {
+          "description": "Common Widget C",
+          "price": 20
+        },
+        {
+          "description": "Common Widget D",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "total_price": 80,
+      "total_lines": 3,
+      "order_lines": [
+        {
+          "description": "Common Widget A",
+          "price": 10
+        },
+        {
+          "description": "Common Widget B",
+          "price": 30
+        },
+        {
+          "description": "Specialized Tool Y",
+          "price": 40
+        }
+      ]
+    }
+  ]
+]
